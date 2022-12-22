@@ -1,5 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import React, { useContext, useMemo, useCallback, useEffect } from 'react'
+import React, {
+  useContext,
+  useMemo,
+  useCallback,
+  useEffect,
+  useState,
+} from 'react'
 import { Button, Input } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from 'src/components'
@@ -30,9 +36,46 @@ const Details = () => {
     actions: { setRecord, setFilms },
   } = useContext(AppContext)
 
-  const { getFilms } = useDb()
+  const { getFilms, setFilms: setFilmsToDb } = useDb()
+
+  const [comment, setComment] = useState('')
+  const [name, setName] = useState('')
+
+  const onChangeComment = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setComment(event.target.value)
+    },
+    [],
+  )
+
+  const onChangeName = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setName(event.target.value)
+    },
+    [],
+  )
 
   const record = films.find((film) => film.key === key)
+
+  const onClickSave = useCallback(() => {
+    if (name && comment) {
+      const newRecord = {
+        ...record,
+      } as Netskope.FilmList.Record
+      newRecord.comments = newRecord.comments || []
+      newRecord.comments.push({ name, message: comment })
+
+      const newFilms = [...films]
+      for (let i = 0, maxI = newFilms.length; i < maxI; i++) {
+        if (newFilms[i].key === key) {
+          newFilms[i] = newRecord
+        }
+      }
+
+      setFilms(newFilms)
+      setFilmsToDb(newFilms)
+    }
+  }, [name, comment, record, films, setFilms, setFilmsToDb, key])
 
   const content = useMemo(
     () =>
@@ -89,8 +132,13 @@ const Details = () => {
         <hr></hr>
         <div className="comments">Comments</div>
         {comments}
-        <Input placeholder="Your comments" style={{ marginBottom: '15px' }} />
-        <Input placeholder="Your name" />
+        <Input
+          placeholder="Your comments"
+          style={{ marginBottom: '15px' }}
+          value={comment}
+          onChange={onChangeComment}
+        />
+        <Input placeholder="Your name" value={name} onChange={onChangeName} />
       </div>
       <div
         style={{
@@ -102,7 +150,9 @@ const Details = () => {
         <Button onClick={navigateToHomePage} style={{ marginRight: '15px' }}>
           Back
         </Button>
-        <Button type="primary">Save</Button>
+        <Button type="primary" onClick={onClickSave}>
+          Save
+        </Button>
       </div>
     </>
   )
