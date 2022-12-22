@@ -7,6 +7,11 @@ declare namespace Netskope {
       data?: Record[]
     }
 
+    interface Comment {
+      name: string
+      message: string
+    }
+
     interface Record {
       film: string
       genre: string
@@ -16,6 +21,7 @@ declare namespace Netskope {
       'rotten-tomatoes': string
       'worldwide-gross': string
       year: string
+      comments: Comment[]
       [index: string]: any
     }
   }

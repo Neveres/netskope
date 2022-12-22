@@ -40,7 +40,8 @@
     "test:coverage": "yarn test --coverage",
     "test:CI": "cross-env CI=true yarn test",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate:films": "node src/static/normalizeFilms && npx prettier --write ./src/static/films.json"
   },
   "eslintConfig": {
     "extends": [
