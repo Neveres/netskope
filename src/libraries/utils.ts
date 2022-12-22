@@ -1,8 +1,8 @@
-import films from 'src/__mock__/films.json'
+import films from 'src/static/films.json'
 
 export const filter = {
   film: (text: string, record: Netskope.FilmList.Record) =>
-    record?.film?.includes(text),
+    record.film.includes(text),
 }
 
 export const fetchFilms = () => films

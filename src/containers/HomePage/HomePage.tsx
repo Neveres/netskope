@@ -4,14 +4,14 @@ import { fetchFilms } from 'src/libraries'
 
 const HomePage = () => {
   const [data, setData] = useState({
-    films: [] as Netskope.FilmList.Record[],
+    list: [] as Netskope.FilmList.Record[],
   })
 
   useEffect(() => {
     setData(fetchFilms())
   }, [])
 
-  return <FilmList data={data.films} />
+  return <FilmList data={data.list} />
 }
 
 export default HomePage
