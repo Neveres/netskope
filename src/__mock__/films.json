@@ -1,0 +1,774 @@
+{
+  "films": [
+    {
+      "film": "Zack and Miri Make a Porno",
+      "genre": "Romance",
+      "lead-studio": "The Weinstein Company",
+      "audience-score": "70",
+      "profitability": "1.747541667",
+      "rotten-tomatoes": "64",
+      "worldwide-gross": "$41.94 ",
+      "year": "2008"
+    },
+    {
+      "film": "Youth in Revolt",
+      "genre": "Comedy",
+      "lead-studio": "The Weinstein Company",
+      "audience-score": "52",
+      "profitability": "1.09",
+      "rotten-tomatoes": "68",
+      "worldwide-gross": "$19.62 ",
+      "year": "2010"
+    },
+    {
+      "film": "You Will Meet a Tall Dark Stranger",
+      "genre": "Comedy",
+      "lead-studio": "Independent",
+      "audience-score": "35",
+      "profitability": "1.211818182",
+      "rotten-tomatoes": "43",
+      "worldwide-gross": "$26.66 ",
+      "year": "2010"
+    },
+    {
+      "film": "When in Rome",
+      "genre": "Comedy",
+      "lead-studio": "Disney",
+      "audience-score": "44",
+      "profitability": "0",
+      "rotten-tomatoes": "15",
+      "worldwide-gross": "$43.04 ",
+      "year": "2010"
+    },
+    {
+      "film": "What Happens in Vegas",
+      "genre": "Comedy",
+      "lead-studio": "Fox",
+      "audience-score": "72",
+      "profitability": "6.267647029",
+      "rotten-tomatoes": "28",
+      "worldwide-gross": "$219.37 ",
+      "year": "2008"
+    },
+    {
+      "film": "Water For Elephants",
+      "genre": "Drama",
+      "lead-studio": "20th Century Fox",
+      "audience-score": "72",
+      "profitability": "3.081421053",
+      "rotten-tomatoes": "60",
+      "worldwide-gross": "$117.09 ",
+      "year": "2011"
+    },
+    {
+      "film": "WALL-E",
+      "genre": "Animation",
+      "lead-studio": "Disney",
+      "audience-score": "89",
+      "profitability": "2.896019067",
+      "rotten-tomatoes": "96",
+      "worldwide-gross": "$521.28 ",
+      "year": "2008"
+    },
+    {
+      "film": "Waitress",
+      "genre": "Romance",
+      "lead-studio": "Independent",
+      "audience-score": "67",
+      "profitability": "11.0897415",
+      "rotten-tomatoes": "89",
+      "worldwide-gross": "$22.18 ",
+      "year": "2007"
+    },
+    {
+      "film": "Waiting For Forever",
+      "genre": "Romance",
+      "lead-studio": "Independent",
+      "audience-score": "53",
+      "profitability": "0.005",
+      "rotten-tomatoes": "6",
+      "worldwide-gross": "$0.03 ",
+      "year": "2011"
+    },
+    {
+      "film": "Valentine's Day",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "54",
+      "profitability": "4.184038462",
+      "rotten-tomatoes": "17",
+      "worldwide-gross": "$217.57 ",
+      "year": "2010"
+    },
+    {
+      "film": "Tyler Perry's Why Did I get Married",
+      "genre": "Romance",
+      "lead-studio": "Independent",
+      "audience-score": "47",
+      "profitability": "3.7241924",
+      "rotten-tomatoes": "46",
+      "worldwide-gross": "$55.86 ",
+      "year": "2007"
+    },
+    {
+      "film": "Twilight: Breaking Dawn",
+      "genre": "Romance",
+      "lead-studio": "Independent",
+      "audience-score": "68",
+      "profitability": "6.383363636",
+      "rotten-tomatoes": "26",
+      "worldwide-gross": "$702.17 ",
+      "year": "2011"
+    },
+    {
+      "film": "Twilight",
+      "genre": "Romance",
+      "lead-studio": "Summit",
+      "audience-score": "82",
+      "profitability": "10.18002703",
+      "rotten-tomatoes": "49",
+      "worldwide-gross": "$376.66 ",
+      "year": "2008"
+    },
+    {
+      "film": "The Ugly Truth",
+      "genre": "Comedy",
+      "lead-studio": "Independent",
+      "audience-score": "68",
+      "profitability": "5.402631579",
+      "rotten-tomatoes": "14",
+      "worldwide-gross": "$205.30 ",
+      "year": "2009"
+    },
+    {
+      "film": "The Twilight Saga: New Moon",
+      "genre": "Drama",
+      "lead-studio": "Summit",
+      "audience-score": "78",
+      "profitability": "14.1964",
+      "rotten-tomatoes": "27",
+      "worldwide-gross": "$709.82 ",
+      "year": "2009"
+    },
+    {
+      "film": "The Time Traveler's Wife",
+      "genre": "Drama",
+      "lead-studio": "Paramount",
+      "audience-score": "65",
+      "profitability": "2.598205128",
+      "rotten-tomatoes": "38",
+      "worldwide-gross": "$101.33 ",
+      "year": "2009"
+    },
+    {
+      "film": "The Proposal",
+      "genre": "Comedy",
+      "lead-studio": "Disney",
+      "audience-score": "74",
+      "profitability": "7.8675",
+      "rotten-tomatoes": "43",
+      "worldwide-gross": "$314.70 ",
+      "year": "2009"
+    },
+    {
+      "film": "The Invention of Lying",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "47",
+      "profitability": "1.751351351",
+      "rotten-tomatoes": "56",
+      "worldwide-gross": "$32.40 ",
+      "year": "2009"
+    },
+    {
+      "film": "The Heartbreak Kid",
+      "genre": "Comedy",
+      "lead-studio": "Paramount",
+      "audience-score": "41",
+      "profitability": "2.129444167",
+      "rotten-tomatoes": "30",
+      "worldwide-gross": "$127.77 ",
+      "year": "2007"
+    },
+    {
+      "film": "The Duchess",
+      "genre": "Drama",
+      "lead-studio": "Paramount",
+      "audience-score": "68",
+      "profitability": "3.207850222",
+      "rotten-tomatoes": "60",
+      "worldwide-gross": "$43.31 ",
+      "year": "2008"
+    },
+    {
+      "film": "The Curious Case of Benjamin Button",
+      "genre": "Fantasy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "81",
+      "profitability": "1.78394375",
+      "rotten-tomatoes": "73",
+      "worldwide-gross": "$285.43 ",
+      "year": "2008"
+    },
+    {
+      "film": "The Back-up Plan",
+      "genre": "Comedy",
+      "lead-studio": "CBS",
+      "audience-score": "47",
+      "profitability": "2.202571429",
+      "rotten-tomatoes": "20",
+      "worldwide-gross": "$77.09 ",
+      "year": "2010"
+    },
+    {
+      "film": "Tangled",
+      "genre": "Animation",
+      "lead-studio": "Disney",
+      "audience-score": "88",
+      "profitability": "1.365692308",
+      "rotten-tomatoes": "89",
+      "worldwide-gross": "$355.01 ",
+      "year": "2010"
+    },
+    {
+      "film": "Something Borrowed",
+      "genre": "Romance",
+      "lead-studio": "Independent",
+      "audience-score": "48",
+      "profitability": "1.719514286",
+      "rotten-tomatoes": "15",
+      "worldwide-gross": "$60.18 ",
+      "year": "2011"
+    },
+    {
+      "film": "She's Out of My League",
+      "genre": "Comedy",
+      "lead-studio": "Paramount",
+      "audience-score": "60",
+      "profitability": "2.4405",
+      "rotten-tomatoes": "57",
+      "worldwide-gross": "$48.81 ",
+      "year": "2010"
+    },
+    {
+      "film": "Sex and the City Two",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "49",
+      "profitability": "2.8835",
+      "rotten-tomatoes": "15",
+      "worldwide-gross": "$288.35 ",
+      "year": "2010"
+    },
+    {
+      "film": "Sex and the City 2",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "49",
+      "profitability": "2.8835",
+      "rotten-tomatoes": "15",
+      "worldwide-gross": "$288.35 ",
+      "year": "2010"
+    },
+    {
+      "film": "Sex and the City",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "81",
+      "profitability": "7.221795791",
+      "rotten-tomatoes": "49",
+      "worldwide-gross": "$415.25 ",
+      "year": "2008"
+    },
+    {
+      "film": "Remember Me",
+      "genre": "Drama",
+      "lead-studio": "Summit",
+      "audience-score": "70",
+      "profitability": "3.49125",
+      "rotten-tomatoes": "28",
+      "worldwide-gross": "$55.86 ",
+      "year": "2010"
+    },
+    {
+      "film": "Rachel Getting Married",
+      "genre": "Drama",
+      "lead-studio": "Independent",
+      "audience-score": "61",
+      "profitability": "1.384166667",
+      "rotten-tomatoes": "85",
+      "worldwide-gross": "$16.61 ",
+      "year": "2008"
+    },
+    {
+      "film": "Penelope",
+      "genre": "Comedy",
+      "lead-studio": "Summit",
+      "audience-score": "74",
+      "profitability": "1.382799733",
+      "rotten-tomatoes": "52",
+      "worldwide-gross": "$20.74 ",
+      "year": "2008"
+    },
+    {
+      "film": "P.S. I Love You",
+      "genre": "Romance",
+      "lead-studio": "Independent",
+      "audience-score": "82",
+      "profitability": "5.103116833",
+      "rotten-tomatoes": "21",
+      "worldwide-gross": "$153.09 ",
+      "year": "2007"
+    },
+    {
+      "film": "Over Her Dead Body",
+      "genre": "Comedy",
+      "lead-studio": "New Line",
+      "audience-score": "47",
+      "profitability": "2.071",
+      "rotten-tomatoes": "15",
+      "worldwide-gross": "$20.71 ",
+      "year": "2008"
+    },
+    {
+      "film": "Our Family Wedding",
+      "genre": "Comedy",
+      "lead-studio": "Independent",
+      "audience-score": "49",
+      "profitability": "0",
+      "rotten-tomatoes": "14",
+      "worldwide-gross": "$21.37 ",
+      "year": "2010"
+    },
+    {
+      "film": "One Day",
+      "genre": "Romance",
+      "lead-studio": "Independent",
+      "audience-score": "54",
+      "profitability": "3.682733333",
+      "rotten-tomatoes": "37",
+      "worldwide-gross": "$55.24 ",
+      "year": "2011"
+    },
+    {
+      "film": "Not Easily Broken",
+      "genre": "Drama",
+      "lead-studio": "Independent",
+      "audience-score": "66",
+      "profitability": "2.14",
+      "rotten-tomatoes": "34",
+      "worldwide-gross": "$10.70 ",
+      "year": "2009"
+    },
+    {
+      "film": "No Reservations",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "64",
+      "profitability": "3.307180357",
+      "rotten-tomatoes": "39",
+      "worldwide-gross": "$92.60 ",
+      "year": "2007"
+    },
+    {
+      "film": "Nick and Norah's Infinite Playlist",
+      "genre": "Comedy",
+      "lead-studio": "Sony",
+      "audience-score": "67",
+      "profitability": "3.3527293",
+      "rotten-tomatoes": "73",
+      "worldwide-gross": "$33.53 ",
+      "year": "2008"
+    },
+    {
+      "film": "New Year's Eve",
+      "genre": "Romance",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "48",
+      "profitability": "2.536428571",
+      "rotten-tomatoes": "8",
+      "worldwide-gross": "$142.04 ",
+      "year": "2011"
+    },
+    {
+      "film": "My Week with Marilyn",
+      "genre": "Drama",
+      "lead-studio": "The Weinstein Company",
+      "audience-score": "84",
+      "profitability": "0.8258",
+      "rotten-tomatoes": "83",
+      "worldwide-gross": "$8.26 ",
+      "year": "2011"
+    },
+    {
+      "film": "Music and Lyrics",
+      "genre": "Romance",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "70",
+      "profitability": "3.64741055",
+      "rotten-tomatoes": "63",
+      "worldwide-gross": "$145.90 ",
+      "year": "2007"
+    },
+    {
+      "film": "Monte Carlo",
+      "genre": "Romance",
+      "lead-studio": "20th Century Fox",
+      "audience-score": "50",
+      "profitability": "1.9832",
+      "rotten-tomatoes": "38",
+      "worldwide-gross": "$39.66 ",
+      "year": "2011"
+    },
+    {
+      "film": "Miss Pettigrew Lives for a Day",
+      "genre": "Comedy",
+      "lead-studio": "Independent",
+      "audience-score": "70",
+      "profitability": "0.2528949",
+      "rotten-tomatoes": "78",
+      "worldwide-gross": "$15.17 ",
+      "year": "2008"
+    },
+    {
+      "film": "Midnight in Paris",
+      "genre": "Romence",
+      "lead-studio": "Sony",
+      "audience-score": "84",
+      "profitability": "8.744705882",
+      "rotten-tomatoes": "93",
+      "worldwide-gross": "$148.66 ",
+      "year": "2011"
+    },
+    {
+      "film": "Marley and Me",
+      "genre": "Comedy",
+      "lead-studio": "Fox",
+      "audience-score": "77",
+      "profitability": "3.746781818",
+      "rotten-tomatoes": "63",
+      "worldwide-gross": "$206.07 ",
+      "year": "2008"
+    },
+    {
+      "film": "Mamma Mia!",
+      "genre": "Comedy",
+      "lead-studio": "Universal",
+      "audience-score": "76",
+      "profitability": "9.234453864",
+      "rotten-tomatoes": "53",
+      "worldwide-gross": "$609.47 ",
+      "year": "2008"
+    },
+    {
+      "film": "Mamma Mia!",
+      "genre": "Comedy",
+      "lead-studio": "Universal",
+      "audience-score": "76",
+      "profitability": "9.234453864",
+      "rotten-tomatoes": "53",
+      "worldwide-gross": "$609.47 ",
+      "year": "2008"
+    },
+    {
+      "film": "Made of Honor",
+      "genre": "Comdy",
+      "lead-studio": "Sony",
+      "audience-score": "61",
+      "profitability": "2.64906835",
+      "rotten-tomatoes": "13",
+      "worldwide-gross": "$105.96 ",
+      "year": "2008"
+    },
+    {
+      "film": "Love Happens",
+      "genre": "Drama",
+      "lead-studio": "Universal",
+      "audience-score": "40",
+      "profitability": "2.004444444",
+      "rotten-tomatoes": "18",
+      "worldwide-gross": "$36.08 ",
+      "year": "2009"
+    },
+    {
+      "film": "Love & Other Drugs",
+      "genre": "Comedy",
+      "lead-studio": "Fox",
+      "audience-score": "55",
+      "profitability": "1.817666667",
+      "rotten-tomatoes": "48",
+      "worldwide-gross": "$54.53 ",
+      "year": "2010"
+    },
+    {
+      "film": "Life as We Know It",
+      "genre": "Comedy",
+      "lead-studio": "Independent",
+      "audience-score": "62",
+      "profitability": "2.530526316",
+      "rotten-tomatoes": "28",
+      "worldwide-gross": "$96.16 ",
+      "year": "2010"
+    },
+    {
+      "film": "License to Wed",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "55",
+      "profitability": "1.9802064",
+      "rotten-tomatoes": "8",
+      "worldwide-gross": "$69.31 ",
+      "year": "2007"
+    },
+    {
+      "film": "Letters to Juliet",
+      "genre": "Comedy",
+      "lead-studio": "Summit",
+      "audience-score": "62",
+      "profitability": "2.639333333",
+      "rotten-tomatoes": "40",
+      "worldwide-gross": "$79.18 ",
+      "year": "2010"
+    },
+    {
+      "film": "Leap Year",
+      "genre": "Comedy",
+      "lead-studio": "Universal",
+      "audience-score": "49",
+      "profitability": "1.715263158",
+      "rotten-tomatoes": "21",
+      "worldwide-gross": "$32.59 ",
+      "year": "2010"
+    },
+    {
+      "film": "Knocked Up",
+      "genre": "Comedy",
+      "lead-studio": "Universal",
+      "audience-score": "83",
+      "profitability": "6.636401848",
+      "rotten-tomatoes": "91",
+      "worldwide-gross": "$219 ",
+      "year": "2007"
+    },
+    {
+      "film": "Killers",
+      "genre": "Action",
+      "lead-studio": "Lionsgate",
+      "audience-score": "45",
+      "profitability": "1.245333333",
+      "rotten-tomatoes": "11",
+      "worldwide-gross": "$93.40 ",
+      "year": "2010"
+    },
+    {
+      "film": "Just Wright",
+      "genre": "Comedy",
+      "lead-studio": "Fox",
+      "audience-score": "58",
+      "profitability": "1.797416667",
+      "rotten-tomatoes": "45",
+      "worldwide-gross": "$21.57 ",
+      "year": "2010"
+    },
+    {
+      "film": "Jane Eyre",
+      "genre": "Romance",
+      "lead-studio": "Universal",
+      "audience-score": "77",
+      "profitability": "0",
+      "rotten-tomatoes": "85",
+      "worldwide-gross": "$30.15 ",
+      "year": "2011"
+    },
+    {
+      "film": "It's Complicated",
+      "genre": "Comedy",
+      "lead-studio": "Universal",
+      "audience-score": "63",
+      "profitability": "2.642352941",
+      "rotten-tomatoes": "56",
+      "worldwide-gross": "$224.60 ",
+      "year": "2009"
+    },
+    {
+      "film": "I Love You Phillip Morris",
+      "genre": "Comedy",
+      "lead-studio": "Independent",
+      "audience-score": "57",
+      "profitability": "1.34",
+      "rotten-tomatoes": "71",
+      "worldwide-gross": "$20.10 ",
+      "year": "2010"
+    },
+    {
+      "film": "High School Musical 3: Senior Year",
+      "genre": "Comedy",
+      "lead-studio": "Disney",
+      "audience-score": "76",
+      "profitability": "22.91313646",
+      "rotten-tomatoes": "65",
+      "worldwide-gross": "$252.04 ",
+      "year": "2008"
+    },
+    {
+      "film": "He's Just Not That Into You",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "60",
+      "profitability": "7.1536",
+      "rotten-tomatoes": "42",
+      "worldwide-gross": "$178.84 ",
+      "year": "2009"
+    },
+    {
+      "film": "Good Luck Chuck",
+      "genre": "Comedy",
+      "lead-studio": "Lionsgate",
+      "audience-score": "61",
+      "profitability": "2.36768512",
+      "rotten-tomatoes": "3",
+      "worldwide-gross": "$59.19 ",
+      "year": "2007"
+    },
+    {
+      "film": "Going the Distance",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "56",
+      "profitability": "1.3140625",
+      "rotten-tomatoes": "53",
+      "worldwide-gross": "$42.05 ",
+      "year": "2010"
+    },
+    {
+      "film": "Gnomeo and Juliet",
+      "genre": "Animation",
+      "lead-studio": "Disney",
+      "audience-score": "52",
+      "profitability": "5.387972222",
+      "rotten-tomatoes": "56",
+      "worldwide-gross": "$193.97 ",
+      "year": "2011"
+    },
+    {
+      "film": "Gnomeo and Juliet",
+      "genre": "Animation",
+      "lead-studio": "Disney",
+      "audience-score": "52",
+      "profitability": "5.387972222",
+      "rotten-tomatoes": "56",
+      "worldwide-gross": "$193.97 ",
+      "year": "2011"
+    },
+    {
+      "film": "Ghosts of Girlfriends Past",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "47",
+      "profitability": "2.0444",
+      "rotten-tomatoes": "27",
+      "worldwide-gross": "$102.22 ",
+      "year": "2009"
+    },
+    {
+      "film": "Four Christmases",
+      "genre": "Comedy",
+      "lead-studio": "Warner Bros.",
+      "audience-score": "52",
+      "profitability": "2.022925",
+      "rotten-tomatoes": "26",
+      "worldwide-gross": "$161.83 ",
+      "year": "2008"
+    },
+    {
+      "film": "Fireproof",
+      "genre": "Drama",
+      "lead-studio": "Independent",
+      "audience-score": "51",
+      "profitability": "66.934",
+      "rotten-tomatoes": "40",
+      "worldwide-gross": "$33.47 ",
+      "year": "2008"
+    },
+    {
+      "film": "Enchanted",
+      "genre": "Comedy",
+      "lead-studio": "Disney",
+      "audience-score": "80",
+      "profitability": "4.005737082",
+      "rotten-tomatoes": "93",
+      "worldwide-gross": "$340.49 ",
+      "year": "2007"
+    },
+    {
+      "film": "Dear John",
+      "genre": "Drama",
+      "lead-studio": "Sony",
+      "audience-score": "66",
+      "profitability": "4.5988",
+      "rotten-tomatoes": "29",
+      "worldwide-gross": "$114.97 ",
+      "year": "2010"
+    },
+    {
+      "film": "Beginners",
+      "genre": "Comedy",
+      "lead-studio": "Independent",
+      "audience-score": "80",
+      "profitability": "4.471875",
+      "rotten-tomatoes": "84",
+      "worldwide-gross": "$14.31 ",
+      "year": "2011"
+    },
+    {
+      "film": "Across the Universe",
+      "genre": "romance",
+      "lead-studio": "Independent",
+      "audience-score": "84",
+      "profitability": "0.652603178",
+      "rotten-tomatoes": "54",
+      "worldwide-gross": "$29.37 ",
+      "year": "2007"
+    },
+    {
+      "film": "A Serious Man",
+      "genre": "Drama",
+      "lead-studio": "Universal",
+      "audience-score": "64",
+      "profitability": "4.382857143",
+      "rotten-tomatoes": "89",
+      "worldwide-gross": "$30.68 ",
+      "year": "2009"
+    },
+    {
+      "film": "A Dangerous Method",
+      "genre": "Drama",
+      "lead-studio": "Independent",
+      "audience-score": "89",
+      "profitability": "0.44864475",
+      "rotten-tomatoes": "79",
+      "worldwide-gross": "$8.97 ",
+      "year": "2011"
+    },
+    {
+      "film": "27 Dresses",
+      "genre": "Comedy",
+      "lead-studio": "Fox",
+      "audience-score": "71",
+      "profitability": "5.3436218",
+      "rotten-tomatoes": "40",
+      "worldwide-gross": "$160.31 ",
+      "year": "2008"
+    },
+    {
+      "film": "(500) Days of Summer",
+      "genre": "comedy",
+      "lead-studio": "Fox",
+      "audience-score": "81",
+      "profitability": "8.096",
+      "rotten-tomatoes": "87",
+      "worldwide-gross": "$60.72 ",
+      "year": "2009"
+    }
+  ]
+}
