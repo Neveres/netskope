@@ -22,6 +22,7 @@ declare namespace Netskope {
       'worldwide-gross': string
       year: string
       comments: Comment[]
+      key: string
       [index: string]: any
     }
   }
@@ -29,7 +30,7 @@ declare namespace Netskope {
   declare namespace AppContext {
     type State = {
       films: FilmList.Record[]
-      record: FilmList.Record
+      key: FilmList.Record['key']
     }
 
     type Action = State & {
@@ -37,7 +38,7 @@ declare namespace Netskope {
     }
 
     type Actions = {
-      setRecord(record: FilmList.Record): void
+      setRecord(key: FilmList.Record['key']): void
       setFilms(films: FilmList.Record[]): void
     }
   }

@@ -5,11 +5,20 @@ export const contentContainer = css`
   margin: 10px;
   border: 1px solid #d9d9d9;
 
-  h2 {
-    margin: 0;
+  .field-title {
+    display: inline-block;
+    color: gray;
+    margin-right: 5px;
   }
 
   .field-value {
+    display: inline-block;
     margin-bottom: 5px;
+    font-weight: 700;
+  }
+
+  .comments {
+    font-weight: 700;
+    margin-bottom: 15px;
   }
 `

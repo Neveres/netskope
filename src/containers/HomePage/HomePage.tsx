@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { FilmList, AppContext } from 'src/components'
 import { fetchFilms } from 'src/libraries'
+import { useDb } from 'src/hooks'
 
 const HomePage = () => {
   const {
@@ -8,9 +9,19 @@ const HomePage = () => {
     actions: { setFilms },
   } = useContext(AppContext)
 
+  const { getFilms, setFilms: setFilmsToDb } = useDb()
+
   useEffect(() => {
-    setFilms(fetchFilms())
-  }, [setFilms])
+    getFilms().then((filmsInDb) => {
+      if (filmsInDb) {
+        setFilms(filmsInDb)
+      } else {
+        const defaultFilms = fetchFilms()
+        setFilms(defaultFilms)
+        setFilmsToDb(defaultFilms)
+      }
+    })
+  }, [])
 
   return <FilmList data={films} />
 }

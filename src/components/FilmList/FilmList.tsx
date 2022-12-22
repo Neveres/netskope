@@ -3,7 +3,7 @@ import React, { useMemo, useContext } from 'react'
 import { Table } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import { useSearch } from 'src/hooks'
-import { filter, setItem, KEY } from 'src/libraries'
+import { filter, setItem, KEY, sorter } from 'src/libraries'
 import { AppContext } from 'src/components'
 import { PagePath } from 'src/Routes'
 import { toolBarContainer } from './styles'
@@ -27,14 +27,21 @@ const FilmList: React.FC<Netskope.FilmList.Props> = ({ data = [] }) => {
         width: '50%',
       },
       {
+        title: 'Year Release',
+        dataIndex: 'year',
+        key: 'year',
+        width: '40%',
+        sorter: sorter.year,
+      },
+      {
         title: '',
         key: '',
         width: '10%',
         render: (_, record) => (
           <a
             onClick={() => {
-              setRecord(record)
-              setItem(KEY, record)
+              setRecord(record.key)
+              setItem(KEY, record.key)
               navigate(PagePath.Details)
             }}
           >

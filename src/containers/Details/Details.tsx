@@ -1,46 +1,68 @@
 /** @jsxImportSource @emotion/react */
-import React, { useContext, useMemo, useCallback } from 'react'
-import { Button } from 'antd'
+import React, { useContext, useMemo, useCallback, useEffect } from 'react'
+import { Button, Input } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from 'src/components'
-import { KEY, getItem, isObjectEmpty } from 'src/libraries'
+import { KEY, getItem } from 'src/libraries'
 import { PagePath } from 'src/Routes'
+import { useDb } from 'src/hooks'
 import { contentContainer } from './styles'
 
-const DEFAULT_VALUE = 'N/A'
-
 const fields = [
-  { title: 'Name', key: 'film' },
-  { title: 'Genre', key: 'genre' },
-  { title: 'Studio', key: 'lead-studio' },
-  { title: 'User Rating', key: 'audience-score' },
-  { title: 'Profitability', key: 'profitability' },
-  { title: 'Rotten Tomatoes Rating', key: 'rotten-tomatoes' },
-  { title: 'Worldwide Gross', key: 'worldwide-gross' },
-  { title: 'Year Release', key: 'year' },
+  { title: 'Genre', key: 'genre', unit: '' },
+  { title: 'Studio', key: 'lead-studio', unit: '' },
+  { title: 'User Rating', key: 'audience-score', unit: '%' },
+  {
+    title: 'Profitability',
+    key: 'profitability',
+    unit: '%',
+    shouldRound: true,
+  },
+  { title: 'Rotten Tomatoes Rating', key: 'rotten-tomatoes', unit: '%' },
+  { title: 'Worldwide Gross', key: 'worldwide-gross', unit: 'm' },
+  { title: 'Year Release', key: 'year', unit: '' },
 ]
 
 const Details = () => {
   const navigate = useNavigate()
-  let {
-    state: { record },
+  const {
+    state: { key, films },
+    actions: { setRecord, setFilms },
   } = useContext(AppContext)
 
-  if (isObjectEmpty(record)) {
-    record = getItem(KEY) || {}
-  }
+  const { getFilms } = useDb()
+
+  const record = films.find((film) => film.key === key)
 
   const content = useMemo(
     () =>
       fields.map((element) => {
-        const { title, key } = element
+        const { title, key, unit, shouldRound } = element
+
         return (
           <div key={key}>
-            <h2>{`${title}: `}</h2>
-            <div className="field-value">{record[key] || DEFAULT_VALUE}</div>
+            <div className="field-title">{`${title}:`}</div>
+            <div className="field-value">{`${
+              shouldRound ? Math.round(record?.[key] * 10) / 10 : record?.[key]
+            }${unit}`}</div>
           </div>
         )
       }),
+    [record],
+  )
+
+  const comments = useMemo(
+    () =>
+      record?.comments.map((comment) => {
+        const { name, message } = comment
+        return (
+          <div key={`${name}-${message}`}>
+            <div className="field-title">{`${name}:`}</div>
+            <div className="field-value">{`${message}`}</div>
+          </div>
+        )
+      }),
+
     [record],
   )
 
@@ -48,19 +70,40 @@ const Details = () => {
     navigate(PagePath.Root)
   }, [navigate])
 
+  useEffect(() => {
+    if (!key) {
+      setRecord(getItem(KEY))
+      getFilms().then((filmsInDb) => {
+        setFilms(filmsInDb)
+      })
+    }
+  }, [])
+
   return (
     <>
       <div className="app-header">
-        <span className="page-title">Film Details</span>
+        <span className="page-title">{record?.film}</span>
       </div>
-      <div css={contentContainer}>{content}</div>
-      <Button
-        type="primary"
-        onClick={navigateToHomePage}
-        style={{ display: 'block', margin: 'auto' }}
+      <div css={contentContainer}>
+        {content}
+        <hr></hr>
+        <div className="comments">Comments</div>
+        {comments}
+        <Input placeholder="Your comments" style={{ marginBottom: '15px' }} />
+        <Input placeholder="Your name" />
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
       >
-        Back
-      </Button>
+        <Button onClick={navigateToHomePage} style={{ marginRight: '15px' }}>
+          Back
+        </Button>
+        <Button type="primary">Save</Button>
+      </div>
     </>
   )
 }

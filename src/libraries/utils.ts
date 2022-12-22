@@ -7,5 +7,7 @@ export const filter = {
 
 export const fetchFilms = () => films.list as Netskope.FilmList.Record[]
 
-export const isObjectEmpty = (value: any) =>
-  Object.keys(value).length === 0 && value.constructor === Object
+export const sorter = {
+  year: (first: Netskope.FilmList.Record, second: Netskope.FilmList.Record) =>
+    first.year >= second.year ? 1 : -1,
+}
