@@ -1,3 +1,11 @@
+# Step to launch
+
+```
+$ docker pull lechewu/react-nginx
+$ docker run --rm -it -p 8080:80 react-nginx
+```
+Navigate to http://localhost:8080, and you should now see app 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
