@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import { FilmList } from 'src/components'
+import React, { useContext, useEffect } from 'react'
+import { FilmList, AppContext } from 'src/components'
 import { fetchFilms } from 'src/libraries'
 
 const HomePage = () => {
-  const [data, setData] = useState({
-    list: [] as Netskope.FilmList.Record[],
-  })
+  const {
+    state: { films },
+    actions: { setFilms },
+  } = useContext(AppContext)
 
   useEffect(() => {
-    setData(fetchFilms())
-  }, [])
+    setFilms(fetchFilms())
+  }, [setFilms])
 
-  return <FilmList data={data.list} />
+  return <FilmList data={films} />
 }
 
 export default HomePage

@@ -22,6 +22,7 @@ declare namespace Netskope {
 
   declare namespace AppContext {
     type State = {
+      films: FilmList.Record[]
       record: FilmList.Record
     }
 
@@ -31,6 +32,7 @@ declare namespace Netskope {
 
     type Actions = {
       setRecord(record: FilmList.Record): void
+      setFilms(films: FilmList.Record[]): void
     }
   }
 }

@@ -1,10 +1,11 @@
 import React, { Suspense, useReducer, useMemo } from 'react'
 import { Routes } from 'src/Routes'
 import { AppContext } from 'src/components'
-import { reducer, setRecord } from 'src/libraries'
+import { reducer, SET_FILMS, SET_RECORD } from 'src/libraries'
 import { GlobalCss } from './GlobalCss'
 
 const initialState = {
+  films: [] as Netskope.FilmList.Record[],
   record: {} as Netskope.FilmList.Record,
 }
 
@@ -13,9 +14,14 @@ const App = () => {
 
   const actions = useMemo(
     () => ({
-      setRecord: setRecord.bind(null, dispatch),
+      setRecord(record: Netskope.FilmList.Record) {
+        dispatch({ type: SET_RECORD, ...state, record })
+      },
+      setFilms(films: Netskope.FilmList.Record[]) {
+        dispatch({ type: SET_FILMS, ...state, films })
+      },
     }),
-    [],
+    [state],
   )
 
   const valueOfAppContext = useMemo(
