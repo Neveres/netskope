@@ -15,7 +15,7 @@ Tech stacks: [React](https://reactjs.org/), [TypeScript](https://www.typescriptl
 
 ```bash
 $ docker pull lechewu/react-nginx
-$ docker run --rm -it -p 8080:80 react-nginx
+$ docker run --rm -it -p 8080:80 lechewu/react-nginx
 ```
 
 Navigate to http://localhost:8080, and you should now see app
