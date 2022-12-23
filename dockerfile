@@ -11,6 +11,8 @@ RUN yarn && yarn build
 # 2) nginx stage to serve frontend assets
 # nginx state for serving content
 FROM nginx:alpine
+# Update nginx configure
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Set working directory to nginx asset directory
 WORKDIR /usr/share/nginx/html
 # Remove default nginx static assets
