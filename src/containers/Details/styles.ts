@@ -22,3 +22,9 @@ export const contentContainer = css`
     margin-bottom: 15px;
   }
 `
+
+export const buttonContainer = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`

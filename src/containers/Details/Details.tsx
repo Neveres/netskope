@@ -12,7 +12,7 @@ import { AppContext } from 'src/components'
 import { KEY, getItem } from 'src/libraries'
 import { PagePath } from 'src/Routes'
 import { useDb } from 'src/hooks'
-import { contentContainer } from './styles'
+import { contentContainer, buttonContainer } from './styles'
 
 const fields = [
   { title: 'Genre', key: 'genre', unit: '' },
@@ -140,13 +140,7 @@ const Details = () => {
         />
         <Input placeholder="Your name" value={name} onChange={onChangeName} />
       </div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
+      <div css={buttonContainer}>
         <Button onClick={navigateToHomePage} style={{ marginRight: '15px' }}>
           Back
         </Button>
