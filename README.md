@@ -1,54 +1,51 @@
-# Step to launch
+# Netskope UI Take Home Exercise
 
-```
+> This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Tech stacks: [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/), [ESLint](https://eslint.org/), [Ant Design](https://ant.design/), [Emotion](https://emotion.sh/docs/introduction) and [idb](https://github.com/jakearchibald/idb#indexeddb-with-usability)
+
+## Table of Contents
+
+- [Step to launch](#step-to-launch)
+- [Design of this exercise](#design-of-this-exercise)
+
+<a name="step-to-launch"></a>
+
+## Step to launch
+
+```bash
 $ docker pull lechewu/react-nginx
 $ docker run --rm -it -p 8080:80 react-nginx
 ```
-Navigate to http://localhost:8080, and you should now see app 
 
-# Getting Started with Create React App
+Navigate to http://localhost:8080, and you should now see app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a name="design-of-this-exercise"></a>
 
-## Available Scripts
+## Design of this exercise
 
-In the project directory, you can run:
+> This web application achieves requirements with [client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage) which means it won't depend on any backend Web API Service. Hence, there only need [nginx](https://www.nginx.com/) to host bundle of web application.
 
-### `yarn start`
+### Homepage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### First time to visit
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> When users first time visit web, web would provide default movie list. In the mean time, web also set list to [Context](https://zh-hant.reactjs.org/docs/context.html) and [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB)
 
-### `yarn test`
+#### Not first time to visit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Web would provide movie list that stored in IndexedDB and synchronize the list to Context
 
-### `yarn build`
+### Details page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Click details on Homepage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> While users click details, web would navigate to Details page and set _id_ of moive to Context, [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Add comments
 
-### `yarn eject`
+> After users fill in required fields and click save button, web would update movie list that stored in IndexedDB and Context
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### While refreshing Deatils Page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Web would get _id_ of movie and movie list from IndexedDB, then set them to Context
