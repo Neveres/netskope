@@ -6,8 +6,15 @@ Tech stacks: [React](https://reactjs.org/), [TypeScript](https://www.typescriptl
 
 ## Table of Contents
 
+- [Demo site](#demo-site)
 - [Step to launch](#step-to-launch)
 - [Design of this exercise](#design-of-this-exercise)
+
+<a name="demo-site"></a>
+
+## Demo site
+
+Navigate to [https://netskope-1f9d8.web.app](https://netskope-1f9d8.web.app) to see app
 
 <a name="step-to-launch"></a>
 
