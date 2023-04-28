@@ -120,6 +120,7 @@ const Details = () => {
         setFilms(filmsInDb)
       })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

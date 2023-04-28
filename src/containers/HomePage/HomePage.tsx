@@ -21,6 +21,7 @@ const HomePage = () => {
         setFilmsToDb(defaultFilms)
       }
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return <FilmList data={films} />
